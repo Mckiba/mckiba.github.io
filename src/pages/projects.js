@@ -66,16 +66,16 @@ export default function Projects() {
                 github="https://github.com/Mckiba/Lights-Out"
               />
             </div>
-            {/* <div className="col-span-12">
-              <FeaturedProject
-                type=""
+            <div className="col-span-12">
+              {/* <FeaturedProject
+                type="Design Project"
                 title=""
-                summary=""
-                img={proj4}
+                summary="We explored the cha"
+                img={proj3}
                 link=""
                 github=""
-              />
-            </div> */}
+              /> */}
+            </div>
       
           </div>
         </Layout>
