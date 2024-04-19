@@ -81,6 +81,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          NEXT_PUBLIC_MICROSOFT_CLARITY: ${{ secrets.NEXT_PUBLIC_MICROSOFT_CLARITY }}
 
        
 
@@ -99,3 +100,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          NEXT_PUBLIC_MICROSOFT_CLARITY: ${{ secrets.NEXT_PUBLIC_MICROSOFT_CLARITY }}
