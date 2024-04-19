@@ -79,6 +79,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Build NextJS
+        run: yarn build
+        env:
+          NEXT_PUBLIC_MICROSOFT_CLARITY: ${{ secrets.NEXT_PUBLIC_MICROSOFT_CLARITY }}
+
+
 
   # Deployment job
   deploy:
