@@ -1,16 +1,13 @@
- 
- import Head from "next/head";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
- import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/developer-pic-1.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
- import { LinkArrow } from "@/components/Icons";
- 
+import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
-  
   return (
     <>
       <Head>
@@ -42,14 +39,16 @@ export default function Home() {
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-                {"Hey, I'm Mckiba. Welcome to my website. I'm a software engineer and UI/UX designer. I'm passionate about building  software that improves the lives of those around me."}
+                {
+                  "Hey, I'm Mckiba. Welcome to my website. I'm a software engineer and UI/UX designer. I'm passionate about building  software that improves the lives of those around me."
+                }
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="https://drive.google.com/file/d/1aFGYFEk0zkAJsLdAfmd5Ksc30YYIajDz/view?usp=drive_link"
+                  href="mailto:wmckiba@gmail.com"
                   target={"_blank"}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -58,15 +57,7 @@ export default function Home() {
              `}
                   download
                 >
-                  Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
-                </Link>
-
-                <Link
-                  href="mailto:wmckiba@gmail.com"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline 
-                  dark:text-light md:text-base"
-                >
-                  Contact
+                  Contact <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
               </div>
             </div>
