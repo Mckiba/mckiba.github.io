@@ -52,7 +52,7 @@ export default function Projects() {
                 title="Guinep"
                 summary="A travel application that allows users to search for flights, hotels, car rentals and live chat with travel agents"
                 img={proj2}
-                link=""
+                link="https://apps.apple.com/us/app/guinep/id6476686339"
                 github=""
               />
             </div>
